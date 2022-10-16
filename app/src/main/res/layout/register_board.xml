@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lobby">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="329dp"
+        android:layout_height="47dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="119dp"
+        android:layout_marginEnd="41dp"
+        android:fontFamily="sans-serif-black"
+        android:src="@mipmap/black_king"
+        android:text="@string/hello_new_board_owner"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="193dp"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="182dp"
+        android:layout_marginEnd="70dp"
+        android:fontFamily="sans-serif-black"
+        android:src="@mipmap/black_king"
+        android:text="@string/register_admin_user"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/rb_boardID"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="83dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="403dp"
+        android:background="#CCCCCC"
+        android:hint="@string/serial_number"
+        android:inputType="text"
+        android:paddingStart="15dp"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/rb_register_code"
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="83dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="312dp"
+        android:background="#CCCCCC"
+        android:hint="@string/register_code"
+        android:inputType="text"
+        android:paddingStart="15dp"
+        tools:ignore="RtlSymmetry" />
+
+    <Button
+        android:id="@+id/rb_registerBoard"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="-300dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginBottom="241dp"
+        android:backgroundTint="@color/Red"
+        android:text="@string/register" />
+
+
+</RelativeLayout>

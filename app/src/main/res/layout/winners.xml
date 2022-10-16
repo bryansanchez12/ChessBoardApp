@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/w_text"
+        android:layout_width="410dp"
+        android:layout_height="183dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:alpha="1"
+        android:background="@color/Black"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="@string/black_wins"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textSize="60sp"
+        android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/w_white_text"
+        android:layout_width="match_parent"
+        android:layout_height="143dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:alpha="1"
+        android:background="@color/White"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="@string/white_wins"
+        android:textAlignment="center"
+        android:textColor="@color/Black"
+        android:textSize="60sp"
+        android:typeface="normal"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/w_cup"
+        android:layout_width="220dp"
+        android:layout_height="274dp"
+        android:layout_below="@+id/w_text"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/cup" />
+
+    <Button
+        android:id="@+id/w_play_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/w_cup"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_corner_maroon"
+        android:layout_marginTop="50dp"
+        android:text="@string/play_again"/>
+
+</RelativeLayout>

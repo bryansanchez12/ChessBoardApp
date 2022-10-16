@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lobby">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="274dp"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="66dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="670dp"
+        android:background="@drawable/rounded_corner_crimson"
+        android:fontFamily="sans-serif-black"
+        android:src="@mipmap/black_king"
+        android:text="@string/game_settings"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+
+    <!--           Online user display             -->
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="190dp"
+        android:layout_height="47dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="183dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="501dp"
+        android:fontFamily="sans-serif-black"
+        android:src="@mipmap/black_king"
+        android:text="@string/difficulty_level"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/gs_userID"
+        android:layout_width="107dp"
+        android:layout_height="61dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="246dp"
+        android:layout_marginEnd="271dp"
+        android:fontFamily="sans-serif-black"
+        android:src="@mipmap/black_king"
+        android:text="@string/user"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/gs_online_username"
+        android:layout_width="237dp"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="244dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="sans-serif-black"
+        android:src="@mipmap/black_king"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <!--      #######################          -->
+
+
+    <!--          Board difficulty             -->
+
+    <SeekBar
+        android:id="@+id/gs_difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="239dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="441dp" />
+
+    <!--      #######################          -->
+
+    <TextView
+        android:id="@+id/gs_difficulty_labels"
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="328dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="365dp"
+        android:fontFamily="sans-serif-black"
+        android:src="@mipmap/black_king"
+        android:text="@string/_1_2_3_4_5_6_7_8_9_10"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Switch
+        android:id="@+id/gs_colour"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="346dp"
+        android:layout_marginEnd="280dp"
+        android:layout_marginBottom="340dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:theme="@style/SCBSwitch"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:id="@+id/gs_pa"
+        android:layout_width="96dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="174dp"
+        android:layout_marginTop="346dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginBottom="340dp"
+        android:fontFamily="sans-serif-black"
+        android:src="@mipmap/black_king"
+        android:text="@string/play_as"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/gs_play_as"
+        android:layout_width="108dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="271dp"
+        android:layout_marginTop="346dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="340dp"
+        android:fontFamily="sans-serif-black"
+        android:src="@mipmap/black_king"
+        android:text="@string/white"
+        android:textAlignment="viewStart"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="456dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="174dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/gs_noClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:backgroundTint="@color/Maroon"
+            android:text="@string/no_clock" />
+
+        <Button
+            android:id="@+id/gs_15min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:backgroundTint="@color/Gray"
+            android:text="@string/_15_min" />
+
+        <Button
+            android:id="@+id/gs_30min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:backgroundTint="@color/Gray"
+            android:text="@string/_30_min" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/gs_start_game"
+        android:layout_width="265dp"
+        android:layout_height="63dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="404dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="128dp"
+        android:background="@drawable/rounded_corner_crimson"
+        android:text="@string/start_game"
+        android:textColor="@color/Black"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lobby">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="302dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="90dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-black"
+        android:src="@mipmap/black_king"
+        android:text="@string/registered_users"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="50dp"
+        android:background="@android:color/darker_gray" />
+
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="128dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="185dp"
+        android:layout_marginEnd="232dp"
+        android:layout_marginBottom="500dp"
+        android:fontFamily="sans-serif-black"
+        android:src="@mipmap/black_king"
+        android:text="Board ID:"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/ru_board_id"
+        android:layout_width="170dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="197dp"
+        android:layout_marginTop="185dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="500dp"
+        android:fontFamily="sans-serif-black"
+        android:src="@mipmap/black_king"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        tools:ignore="MissingConstraints">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ru_users_list"
+            android:layout_width="390dp"
+            android:layout_height="195dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="234dp"
+            tools:ignore="MissingClass">
+
+            <ImageView
+                android:id="@+id/ru_delete1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/delete"/>
+
+            <TextView
+                android:id="@+id/ru_user1"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+
+
+    <EditText
+        android:id="@+id/ru_username"
+        android:layout_width="196dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="580dp"
+        android:layout_marginEnd="154dp"
+        android:background="#CCCCCC"
+        android:hint="@string/add_user"
+        android:inputType="text"
+        android:paddingStart="15dp"
+        tools:ignore="RtlSymmetry" />
+
+    <ImageButton
+        android:id="@+id/ru_register_username"
+        android:layout_width="66dp"
+        android:layout_height="68dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="529dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="134dp"
+        android:backgroundTint="@color/White"
+        android:src="@mipmap/airplane" />
+
+
+</RelativeLayout>

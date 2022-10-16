@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lobby">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="78dp"
+        android:fontFamily="sans-serif-black"
+        android:src="@mipmap/black_king"
+        android:text="@string/welcome"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/blackQueen"
+        android:layout_width="119dp"
+        android:layout_height="134dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="137dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="154dp"
+        android:layout_marginRight="160dp"
+        android:src="@mipmap/black_knight" />
+
+    <Button
+        android:id="@+id/connectToBoard"
+        android:layout_width="265dp"
+        android:layout_height="63dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="245dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="424dp"
+        android:text="@string/connect_to_board" />
+
+    <Button
+        android:id="@+id/registerBoard"
+        android:layout_width="265dp"
+        android:layout_height="63dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="205dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="310dp"
+        android:text="@string/register_board" />
+
+    <Button
+        android:id="@+id/accountSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="310dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="205dp"
+        android:text="@string/account_settings" />
+
+
+</RelativeLayout>
